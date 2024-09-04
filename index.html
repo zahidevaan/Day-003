@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/fav-JKDrqQuK.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 03 of (100DaysOfCode)</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <script type="module" crossorigin src="/assets/index-BiGfvTBK.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DjZaQJ2Z.css">
+  </head>
+  <body class="overflow-x-hidden">
+    <div id="app">
+        <!-- Header Section Start Here -->
+        <header class="header fixed w-full py-3 px-5 lg:px-0 transition-all duration-300 top-0 left-0 z-[9999]">
+          <nav class="lg:container w-full mx-auto flex justify-between">
+            <h2 class="logo font-bold text-white text-3xl">Sora Ecom</h2>
+
+            <div class="hamburger">
+              <i class="ri-menu-3-line text-white text-3xl cursor-pointer bg-cyan-900 p-2 rounded-full hover:bg-cyan-500 hover:text-cyan-950 transition-colors duration-300"></i>
+            </div>
+          </nav>
+
+          <!-- Menus Start Here -->
+          <div class="menu-wrapper fixed transition-all duration-500  h-full w-full md:w-72 bg-black py-20">
+
+            <!-- menu close icon start here -->
+            <span class="menu-close-icon absolute top-5 right-5 text-white text-2xl cursor-pointer transition-colors duration-200 hover:text-red-600 p-1">
+              <i class="ri-close-large-line"></i>
+            </span>
+            <!-- menu close icon end here -->
+
+            <div class="menus flex flex-col">
+
+              <a class="menu-item text-white relative overflow-hidden border-b border-white before:transition-all before:duration-500  w-full px-4 py-3 text-xl cursor-pointer before:w-full before:h-full before:absolute before:bg-gradient-to-l before:to-black before:from-fuchsia-800 before:top-0 before:left-0 before:transform before:translate-x-[-100%] before:z-[-1] hover:before:translate-x-0 hover:border-0 flex justify-between"  href="#">
+                <span class="menu-text z-[3]">Home</span>
+                <span class="menu-icon z-[3] text-black"><i class="ri-arrow-right-line"></i></span>
+              </a>
+
+              <a class="menu-item text-white relative overflow-hidden border-b border-white before:transition-all before:duration-500  w-full px-4 py-3 text-xl cursor-pointer before:w-full before:h-full before:absolute before:bg-gradient-to-l before:to-black before:from-fuchsia-800 before:top-0 before:left-0 before:transform before:translate-x-[-100%] before:z-[-1] hover:before:translate-x-0 hover:border-0 flex justify-between"  href="#">
+                <span class="menu-text z-[3]">Works</span>
+                <span class="menu-icon z-[3] text-black"><i class="ri-arrow-right-line"></i></span>
+              </a>
+
+              <a class="menu-item text-white relative overflow-hidden border-b border-white before:transition-all before:duration-500  w-full px-4 py-3 text-xl cursor-pointer before:w-full before:h-full before:absolute before:bg-gradient-to-l before:to-black before:from-fuchsia-800 before:top-0 before:left-0 before:transform before:translate-x-[-100%] before:z-[-1] hover:before:translate-x-0 hover:border-0 flex justify-between"  href="#">
+                <span class="menu-text z-[3]">Prices</span>
+                <span class="menu-icon z-[3] text-black"><i class="ri-arrow-right-line"></i></span>
+              </a>
+
+              <a class="menu-item text-white relative overflow-hidden border-b border-white before:transition-all before:duration-500  w-full px-4 py-3 text-xl cursor-pointer before:w-full before:h-full before:absolute before:bg-gradient-to-l before:to-black before:from-fuchsia-800 before:top-0 before:left-0 before:transform before:translate-x-[-100%] before:z-[-1] hover:before:translate-x-0 hover:border-0 flex justify-between"  href="#">
+                <span class="menu-text z-[3]">Clients</span>
+                <span class="menu-icon z-[3] text-black"><i class="ri-arrow-right-line"></i></span>
+              </a>
+
+
+              <a class="menu-item text-white relative overflow-hidden border-b border-white before:transition-all before:duration-500  w-full px-4 py-3 text-xl cursor-pointer before:w-full before:h-full before:absolute before:bg-gradient-to-l before:to-black before:from-fuchsia-800 before:top-0 before:left-0 before:transform before:translate-x-[-100%] before:z-[-1] hover:before:translate-x-0 hover:border-0 flex justify-between"  href="#">
+                <span class="menu-text z-[3]">Blogs</span>
+                <span class="menu-icon z-[3] text-black"><i class="ri-arrow-right-line"></i></span>
+              </a>
+
+              <a class="menu-item text-white relative overflow-hidden border-b border-white before:transition-all before:duration-500  w-full px-4 py-3 text-xl cursor-pointer before:w-full before:h-full before:absolute before:bg-gradient-to-l before:to-black before:from-fuchsia-800 before:top-0 before:left-0 before:transform before:translate-x-[-100%] before:z-[-1] hover:before:translate-x-0 hover:border-0 flex justify-between"  href="#">
+                <span class="menu-text z-[3]">Contact</span>
+                <span class="menu-icon z-[3] text-black"><i class="ri-arrow-right-line"></i></span>
+              </a>
+
+            </div>
+          <!-- Menus end Here -->
+          </div>
+        </header>
+        <!-- Header Section End Here -->
+
+
+        <!-- Hero Section Start Here -->
+      <div class="w-full bg-blue-950">
+        <div class="parent w-full bg-blue-950 relative top-0 left-0 h-[1200vh]">
+          <!-- All page contents are must be loaded in between the right below div -->
+          <div class="w-full sticky top-0 left-0 h-screen ">
+
+            <!-- Animation Canvas Area Start Here-->
+            <canvas class="h-screen w-full z-[1]" id="frames">
+              <!-- All Image are loaded here -->
+            </canvas>
+            <!-- Animation Canvas Area End Here-->
+
+
+            <!-- Overly Section Start Here -->
+            <div class="overly w-screen h-screen fixed top-0 left-0 z-[1] bg-[rgba(0,0,0,0.4)]">
+              <!-- Overly loaded here -->
+            </div>
+            <!-- Overly Section End Here -->
+
+
+            <!-- First Column Start Here -->
+            <div class="animate1 absolute z-[4] text-white bottom-10 w-full lg:w-1/2 left-10">
+              <h1 class="leading-20 font-[100] lg:text-4xl text-2xl text-white">
+                &copy; 2024 DOZE STD
+              </h1>
+
+              <h2 class="text-sm lg:text-xl text-white">
+                SHAPING BRANDS &rarr; CRAFTING MATION
+              </h2>
+            </div>
+            <!--  First Column End Here -->
+
+
+            <!--  Second Column Start Here -->
+            <div class="absolute animate2 w-[90%] lg:w-1/2 2xl:w-1/3 flex flex-col xl:flex-row z-[2] right-0 lg:right-10 bottom-10 text-center lg:text-right opacity-0">
+              <h2 class="leading-20 uppercase text-3xl lg:text-4xl xl:text-6xl font-[100] text-white mb-2">
+                TRANSFORMING VISION
+              </h2>
+              <h2 class="text-xl text-white w-full xl:w-1/2">
+                Building Identity and inspiring action. Sculpting digital Expert
+                resonated
+              </h2>
+            </div>
+            <!--  Second Column End Here -->
+
+
+            <!-- Third Column Start Here -->
+              <div class="animate3 absolute z-[2] w-full lg:w-1/2 2xl:w-1/3 text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center opacity-0 px-5 lg:px-0">
+
+                <h2 class="leading-20 font-[100] uppercase text-4xl lg:text-6xl text-white mb-3">
+                    Elevating Aesthetics
+                </h2>
+
+                <h2 class="text-xl text-white w-full">
+                Crafting solution and exploring new horizons. Evolving narratives and elevating asthetics in every projects.
+                </h2>
+
+              </div>
+            <!-- Third Column End Here -->
+
+            <!-- Fourth Column Start here -->
+            <div class="amimate4  z-[2] bg-white translate-x-full w-full lg:w-[450px] h-screen absolute right-0 top-0 flex flex-col justify-between px-5 py-20">
+
+              <div class="top-part">
+                <h3 class="text-black text-2xl font-[100] mb-3">&copy; 2024 Doze STD</h3>
+                <p class="text-xl font-normal inline-block w-full mb-3 text-black">
+                  Shaping visions into digital realities, weaving stories that captivate and inspire innovation. Exploring new horizons with a focus on evolving narratives, and crafting solutions that engage and elevate
+                </p>
+                <button class="text-xl text-black font-semibold border border-black py-2 px-3 cursor-pointer inline-block mt-3">Get Review <i class="ri-arrow-right-line"></i> </button>
+              </div>
+
+              <div class="bottom-part">
+                <h3  class="text-black text-2xl font-semibold mb-3">Innovating Design </h3>
+                <p class="text-xl font-normal inline-block w-full mb-3 text-black">
+                  Expose yourself to a wide range of ideas and perspectives. Read books, watch documentaries, listen to podcasts, and engage with content outside your usual interests. This cross-pollination of ideas can spark unexpected connections
+                </p>
+                <button class="text-xl text-white font-semibold bg-black py-2 px-3 cursor-pointer inline-block mt-3">Get Review <i class="ri-arrow-right-line"></i> </button>
+              </div>
+            </div>
+            <!-- Fourth Column end here -->
+
+
+            <div class="animate5 w-full z-[2] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0">
+              <h2 class="heading text-white text-2xl lg:text-6xl flex items-end justify-center gap-2 font-[400]">
+                Creative <span class="bg-white w-[50px] h-1"> </span> Innovation &copy;2024
+              </h2>
+            </div>
+
+          </div>
+          <!-- Contents wrapper div close here -->
+    
+        </div>
+      </div>
+        <!-- Hero Section end Here -->
+
+      <div class="works w-full z-[3] absolute left-0 lg:py-32 lg:px-20 bg-blue-950 min-h-screen overflow-x-hidden">
+        <h2 class="text-4xl lg:text-8xl mt-3 tracking-tighter text-white">&reg; Our Recent Works </h2>
+
+        <div class="headings w-full p-3 mt-3 lg:mt-32 text-2xl lg:text-6xl flex flex-col gap-10 relative">
+
+          <h2 class="flex justify-between gap-10 ">
+            <span class="heading-text cursor-pointer">Envision</span>
+            <img class="w-[200px] lg:w-1/2 cursor-pointer heading-img" src="/assets/frame_0001-CsTW6WqD.jpeg" alt="icon">
+          </h2>
+         
+          <h2 class="flex justify-between gap-10 ">
+            <span class="heading-text cursor-pointer">Innovate</span>
+            <img class="w-[200px] lg:w-1/2 cursor-pointer heading-img" src="/assets/frame_0062-CZMnooZ4.jpeg" alt="icon">
+          </h2>
+         
+          <h2 class="flex justify-between gap-10 ">
+            <span class="heading-text cursor-pointer">Transform</span>
+            <img class="w-[200px] lg:w-1/2 cursor-pointer heading-img" src="/assets/frame_0162-C7m061kA.jpeg" alt="icon">
+          </h2>
+         
+
+          <h2 class="flex justify-between gap-10 ">
+            <span class="heading-text cursor-pointer">Ignite</span>
+            <img class="w-[200px] lg:w-1/2 cursor-pointer heading-img" src="/assets/frame_0262-B8xZ21iY.jpeg" alt="icon">
+          </h2>
+         
+          <h2 class="flex justify-between gap-10 ">
+            <span class="heading-text cursor-pointer">Inspire</span>
+            <img class="w-[200px] lg:w-1/2 cursor-pointer heading-img" src="/assets/frame_0562-ChFf3Hi7.jpeg" alt="icon">
+          </h2>
+         
+          <h2 class="flex justify-between gap-10 ">
+            <span class="heading-text cursor-pointer">Elevate</span>
+            <img class="w-[200px] lg:w-1/2 cursor-pointer heading-img" src="/assets/frame_0462-BqD1FziI.jpeg" alt="icon">
+          </h2>
+         
+          <h2 class="flex justify-between gap-10 ">
+            <span class="heading-text cursor-pointer">Create</span>
+            <img class="w-[200px] lg:w-1/2 cursor-pointer heading-img" src="/assets/frame_0662-Bxn8gyPS.jpeg" alt="icon">
+          </h2>
+
+
+          <h2 class="flex justify-between gap-10 ">
+            <span class="heading-text cursor-pointer">Empower</span>
+            <img class="w-[200px] lg:w-1/2 cursor-pointer heading-img" src="/assets/frame_0762-antw00Ij.jpeg" alt="icon">
+          </h2>
+         
+
+          <h2 class="flex justify-between gap-10 ">
+            <span class="heading-text cursor-pointer">Discover</span>
+            <img class="w-[200px] lg:w-1/2 cursor-pointer heading-img" src="/assets/frame_0862-DqlFL-if.jpeg" alt="icon">
+          </h2>
+         
+          
+        </div>
+  
+        
+      </div>
+    </div>
+
+    
+
+
+  <JavaSript>
+       <!-- Necessary JavaScript Start Here -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Necessary JavaScript End Here -->
+  </JavaSript>
+  </body>
+</html>
